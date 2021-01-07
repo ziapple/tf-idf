@@ -35,7 +35,7 @@ def apply(std, arr):
     tf_idf_vectors = tf_idf[doc_vectors]
 
     # 构建LSI模型，降维到主题数，主题数很关键
-    lsi = models.LsiModel(tf_idf_vectors, id2word=dictionary, num_topics=2)
+    lsi = models.LsiModel(tf_idf_vectors, id2word=dictionary, num_topics=3)
     lsi_vector = lsi[tf_idf_vectors]
     # 在LSI向量空间中，所有文本的向量都是二维的
     query = tokenizing(std)
@@ -50,4 +50,4 @@ def apply(std, arr):
 if __name__ == '__main__':
     print(apply('开辟了中国特色社会主义道路，形成了中国特色社会主义理论体系',
                 ['从百姓民生到重大事件，以“以故事讲思想”的方式原汁原味的再现了历史和人民是为什么选择了中国共产党、选择了社会主义、选择了改革开放',
-                 '共产党他一心救中国']))
+                 '准确的解读了我们党成功的根本原因。正是我们党的正确引领，才有了新中国的诞生、发展和强大，该书从解放前到当今社会，从政治体制到经济体育，从国内到国外']))

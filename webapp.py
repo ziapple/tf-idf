@@ -1,6 +1,7 @@
 from flask import Flask
 from flask import request
 import os
+import json
 import service
 
 app = Flask(__name__)
@@ -23,12 +24,21 @@ def check_server():
 
 # 给主观题打分
 # request.json 只能够接受方法为POST、Body为raw，header 内容为 application/json类型的数据
+# curl -H "Content-Type: application/json" -X POST  --data "{
+# \"std\":\"开辟了中国特色社会主义道路，形成了中国特色社会主义理论体系\",
+# \"answer\":[\"从百姓民生到重大事件，以“以故事讲思想”的方式原汁原味的再现了历史和人民是为什么选择了中国共产党、选择了社会主义、选择了改革开放\",\"准确的解读了我们党成功的根本原因。正是我们党的正确引领，才有了新中国的诞生、发展和强大，该书从解放前到当今社会，从政治体制到经济体育\"]}"
+# http://localhost:5000/parse
 @app.route('/parse', methods=['POST'])
-def upload_file():
-    params = request.json if request.method == "POST" else request.args
+def parse():
+    params = json.loads(request.get_data(as_text=True))
     std = params['std']
+    # 传入数组
     answer = params['answer']
-    return service.apply(std, answer)
+    result = service.apply(std, answer)
+    arr = []
+    for t in result:
+        arr.append(t[1])
+    return str(arr)
 
 
 if __name__ == '__main__':
