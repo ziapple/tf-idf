@@ -11,7 +11,7 @@ stop_words = [w.strip() for w in stop_words]
 stop_flag = ['x', 'c', 'u', 'd', 'p', 't', 'uj', 'm', 'f', 'r']
 
 
-# 对一篇文章分词、去停用词
+# 对标准答案进行分词、去停用词
 def tokenization(filename):
     result = []
     with open(filename, 'r', encoding='utf-8') as f:
@@ -23,7 +23,7 @@ def tokenization(filename):
     return result
 
 
-# 选取文章
+# 获取答案
 file_names = ['answer1.txt', 'answer2.txt', 'answer3.txt']
 corpus = []
 for each in file_names:
@@ -39,13 +39,14 @@ tf_idf = models.TfidfModel(doc_vectors)
 tf_idf_vectors = tf_idf[doc_vectors]
 
 # 构建一个query文本，利用词袋模型的字典将其映射到向量空间
-query = tokenization('answer_std.txt')
-query_bow = dictionary.doc2bow(query)
-index = similarities.MatrixSimilarity(tf_idf_vectors)
+# query = tokenization('answer_std.txt')
+# query_bow = dictionary.doc2bow(query)
+# index = similarities.MatrixSimilarity(tf_idf_vectors)
 # 用TF-IDF模型计算相似度
-sims = index[query_bow]
-print('TF-IDF相似度')
-print(list(enumerate(sims)))
+# sims = index[query_bow]
+# print('TF-IDF相似度')
+# print(list(enumerate(sims)))
+###
 
 # 构建LSI模型，降维到主题数，主题数很关键
 lsi = models.LsiModel(tf_idf_vectors, id2word=dictionary, num_topics=2)
