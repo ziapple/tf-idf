@@ -2,7 +2,7 @@ from flask import Flask
 from flask import request
 import os
 import json
-import service
+import service1
 
 app = Flask(__name__)
 
@@ -34,11 +34,14 @@ def parse():
     std = params['std']
     # 传入数组
     answer = params['answer']
-    result = service.apply(std, answer)
-    arr = []
-    for t in result:
-        arr.append(t[1])
-    return str(arr)
+    # result = service.apply(std, answer)
+    vec1, vec2 = service1.get_word_vector(std, answer)
+    dist1 = service1.cos_dist(vec1, vec2)
+    # arr = []
+    # for t in result:
+    #    arr.append(t[1])
+    # return str(arr)
+    return str(dist1)
 
 
 if __name__ == '__main__':
