@@ -2,17 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4104bf9e-7386-4713-bbd6-030802879a12" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/corpus/example1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tf-nltk/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tf-nltk/article_topic.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tf-nltk/common.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tf-nltk/corpus_load.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tf-nltk/download.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tf-nltk/model_train.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tf-nltk/word_statisitcs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tf-nltk/word_tag.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/corpus/c1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/corpus/c2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tfnltk/nltk_dg.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tfnltk/nltk_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tfnltk/nltk_train.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tfnltk/nltk_word2vec.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tfnltk/word_statisitcs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tfnltk/word_tag.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/corpus/example1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf-nltk/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tfnltk/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf-nltk/article_topic.py" beforeDir="false" afterPath="$PROJECT_DIR$/tfnltk/article_topic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf-nltk/common.py" beforeDir="false" afterPath="$PROJECT_DIR$/tfnltk/common.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf-nltk/corpus_load.py" beforeDir="false" afterPath="$PROJECT_DIR$/tfnltk/corpus_load.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf-nltk/download.py" beforeDir="false" afterPath="$PROJECT_DIR$/tfnltk/download.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf-nltk/model_train.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf-nltk/word_statisitcs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf-nltk/word_tag.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp.py" beforeDir="false" afterPath="$PROJECT_DIR$/webapp.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,12 +44,13 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/tf-nltk" />
+    <property name="last_opened_file_path" value="D:/git/fd-dann" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Python\tf-idf\tf-nltk" />
+      <recent name="D:\Python\tf-idf\corpus" />
       <recent name="D:\Python\tf-idf" />
     </key>
   </component>
@@ -56,8 +66,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.model_train">
-    <configuration name="article_topic" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.webapp">
+    <configuration name="codecs" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="tf-idf" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -65,11 +75,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tf-nltk" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Python36/Lib" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tf-nltk/article_topic.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../Python36/Lib/codecs.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -86,11 +96,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tf-nltk" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tfnltk" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tf-nltk/corpus_load.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tfnltk/corpus_load.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -99,7 +109,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="model_train" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="nltk_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="tf-idf" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -111,7 +121,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tf-nltk/model_train.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tf-nltk/nltk_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="webapp" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="tf-idf" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/webapp.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -141,34 +172,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="word_tag" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="tf-idf" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tf-nltk" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tf-nltk/word_tag.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.model_train" />
+        <item itemvalue="Python.webapp" />
         <item itemvalue="Python.corpus_load" />
-        <item itemvalue="Python.article_topic" />
         <item itemvalue="Python.word_statisitcs" />
-        <item itemvalue="Python.word_tag" />
+        <item itemvalue="Python.codecs" />
+        <item itemvalue="Python.nltk_test" />
       </list>
     </recent_temporary>
   </component>
@@ -203,18 +213,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/webapp.py</url>
-          <line>36</line>
+          <line>37</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/service.py</url>
           <line>1</line>
           <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/tf-nltk/word_statisitcs.py</url>
-          <line>9</line>
-          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>

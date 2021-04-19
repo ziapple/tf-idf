@@ -4,6 +4,7 @@ import os
 import json
 import service1
 
+
 app = Flask(__name__)
 
 
@@ -42,6 +43,11 @@ def parse():
     #    arr.append(t[1])
     # return str(arr)
     return str(dist1)
+
+
+# 语料入库
+def corpus_load():
+    corpus_load.load()
 
 
 if __name__ == '__main__':

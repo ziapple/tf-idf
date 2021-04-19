@@ -5,7 +5,7 @@ from nltk.corpus import PlaintextCorpusReader
 # 文件根目录
 corpus_root = r'../corpus'
 # 文件名
-corpus_file = r'example1.txt'
+corpus_file = r'c1.txt'
 file = PlaintextCorpusReader(corpus_root, corpus_file)
 
 print('words --->', file.words())

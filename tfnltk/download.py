@@ -6,6 +6,7 @@ from nltk.corpus import brown
 # punkt下载链接: https://pan.baidu.com/s/1aaFpRWKA2rKV-a2OD6r0cQ 密码: r98k
 # nltk.download('punkt')
 # nltk.download('averaged_perceptron_tagger')
+nltk.download
 brown.categories()
 # print(len(brown.sents()))
 # print(len(brown.words()))
